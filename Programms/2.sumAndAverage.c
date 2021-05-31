@@ -7,7 +7,7 @@
 #define reads(a) scanf("%s",&a)
 
 void init_code()
-{
+{	
 #ifndef ONLINE_JUDGE
 	freopen("input.txt", "r", stdin);
 	freopen("output.txt", "w", stdout);
@@ -17,6 +17,7 @@ void init_code()
 int main()
 {
 	float a, b;
+	printf(" Enter the two Value:\n");
 	readf(a); readf(b);
 	printf("The sum of two number is %f", a + b);
 	br;
