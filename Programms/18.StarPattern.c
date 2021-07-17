@@ -10,7 +10,9 @@
 int main()
 {
     int a;
+    printf("Enter the number of row you want to have: ");
     readi(a);
+    printf("Your Pattern\n");
     for (int i = 1; i <= a; i++)
     {
         for (int j = 1; j <= i; j++)

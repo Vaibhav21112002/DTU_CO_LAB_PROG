@@ -6,16 +6,6 @@
 #define readf(a) scanf("%f", &a)
 #define readc(a) scanf("%c", &a)
 #define reads(a) scanf("%s", &a)
-#define readarr(a, n)           \
-    for (int i = 0; i < n; i++) \
-    {                           \
-        readi(a[i]);            \
-    }
-#define printarr(a, n)          \
-    for (int i = 0; i < n; i++) \
-    {                           \
-        printf("%d ", a[i]);    \
-    }
 
 int factorial(int n)
 {
@@ -29,7 +19,8 @@ int factorial(int n)
 int main()
 {
     int n;
+    printf("Enter a number: ");
     readi(n);
-    printf("%d", factorial(n));
+    printf("The value of factorial is%d", factorial(n));
     return 0;
 }

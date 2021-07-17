@@ -7,47 +7,18 @@
 #define readc(a) scanf("%c", &a)
 #define reads(a) scanf("%s", &a)
 
-int countDig(int a)
-{
-
-    int ans = 0;
-    while (a > 0)
-    {
-        ans++;
-        a /= 10;
-    }
-
-    return ans;
-}
-int power(int a, int b)
-{
-    int ans = 0;
-    for (int i = 0; i < b - 1; i++)
-    {
-        ans += (a * a);
-    }
-
-    return ans;
-}
 int main()
 {
     int a;
+    printf("Enter a Number:");
     readi(a);
-    int digits = countDig(a);
-
-    int ans = 0;
-    int t;
+    printf("The reversed Number is:\n");
     while (a > 0)
     {
-        printf("%d\n", a);
-        t = a % 10;
-        t = t * (pow(10, digits - 1));
-        ans += t;
+        int t = a % 10;
+        printf("%d", t);
         a /= 10;
-        digits--;
     }
-
-    printf("%d", ans);
 
     return 0;
 }

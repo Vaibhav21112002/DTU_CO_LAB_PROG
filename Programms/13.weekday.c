@@ -10,6 +10,7 @@
 int main()
 {
     int a;
+    printf("Enter a Number: ");
     readi(a);
     switch (a)
     {
@@ -39,4 +40,5 @@ int main()
         printf("Not a valid number");
         break;
     }
+    return 0;
 }

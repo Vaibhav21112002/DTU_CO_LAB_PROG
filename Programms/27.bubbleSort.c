@@ -20,8 +20,10 @@
 int main()
 {
     int n;
+    printf("Enter the number of elements you want to enter");
     readi(n);
     int arr[n];
+    printf("Enter the elements of array: ");
     readarr(arr, n);
     for (int i = 0; i < n; i++)
     {
@@ -35,6 +37,7 @@ int main()
             }
         }
     }
+    printf("The Sorted Array now is: \n");
     printarr(arr, n);
     return 0;
 }

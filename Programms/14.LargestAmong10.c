@@ -11,6 +11,7 @@ const int INT_MIN = -999999999;
 int main()
 {
     int mx = INT_MIN;
+    printf("Enter the value of 10 numbers\n");
     for (int i = 0; i < 10; i++)
     {
         int a;
@@ -20,6 +21,7 @@ int main()
             mx = a;
         }
     }
+    printf("The value of the number with greatest value: ");
     printf("%d", mx);
     return 0;
 }

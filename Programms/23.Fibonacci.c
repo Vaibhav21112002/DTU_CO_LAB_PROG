@@ -6,19 +6,20 @@
 #define readf(a) scanf("%f", &a)
 #define readc(a) scanf("%c", &a)
 #define reads(a) scanf("%s", &a)
-
+int arr[100000];
 int main()
 {
     int n;
-    scanf("%d", &n);
-    int a = 0, b = 1;
-    printf("%d %d ", a, b);
-    for (int i = 1; i <= n; i++)
+    printf("Enter a Number");
+    readi(n);
+    arr[0] = 0;
+    arr[1] = 1;
+    printf("The fibonacci Series is:\n");
+    printf("%d %d ", arr[0], arr[1]);
+    for (int i = 2; i < n; i++)
     {
-        int c = a + b;
-        printf("%d ", c);
-        a = b;
-        b = c;
+        arr[i] = arr[i - 1] + arr[i - 2];
+        printf("%d ", arr[i - 1] + arr[i - 2]);
     }
     return 0;
 }

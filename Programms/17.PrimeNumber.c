@@ -10,6 +10,7 @@
 int main()
 {
     int n;
+    printf("Enter a number: ");
     readi(n);
     if (n <= 1)
     {
@@ -19,7 +20,7 @@ int main()
 
     if (n == 2)
     {
-        printf("Prime Number");
+        printf("The number is a prime Number");
         return 0;
     }
 
@@ -28,7 +29,7 @@ int main()
     {
         if (n % i == 0)
         {
-            printf("Composite Number");
+            printf("The number is a composite Number");
             ok = 0;
             break;
         }
@@ -36,7 +37,7 @@ int main()
 
     if (ok == 1)
     {
-        printf("Prime Number");
+        printf("The number is a prime Number");
     }
 
     return 0;

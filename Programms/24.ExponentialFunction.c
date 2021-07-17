@@ -30,13 +30,15 @@ float expn(float x, float t)
 int main()
 {
     float x;
+    printf("Enter a number:");
     readf(x);
     float ans = 0;
-    for (float i = 0; i <= 5; i++)
+    for (float i = 0; i <= x; i++)
     {
         ans += expn(x, i);
     }
 
+    printf("Exponential for %d is: ", x);
     printf("%0.5f", ans);
     return 0;
 }

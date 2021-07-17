@@ -10,6 +10,7 @@
 int main()
 {
     int a;
+    printf("Enter a 5 digit number: ");
     readi(a);
     int ans = 0;
     while (a > 0)
@@ -17,6 +18,7 @@ int main()
         ans += a % 10;
         a /= 10;
     }
+    printf("The sum of the digits of a 5 digit number is: \n");
     printf("%d", ans);
     return 0;
 }

@@ -1,0 +1,2 @@
+The sum of two number is 0.000000
+The average of two number is 0.000000

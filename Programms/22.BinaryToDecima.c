@@ -16,7 +16,7 @@ int countDig(int a)
         a /= 10;
     }
     return ans;
-} //  Number of digits
+}
 int main()
 {
     int n;
@@ -28,7 +28,6 @@ int main()
         ans += ((n % 10) * (pow(2, i - 1)));
         n /= 10;
     }
-
     printf("%d", ans);
     return 0;
 }
